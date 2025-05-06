@@ -3,6 +3,7 @@ import cors from "cors";
 // import morgan from "morgan";
 const app = express();
 
+app.use(express.static("dist"));
 app.use(cors());
 // morgan.token("host-body", function (req, res) {
 //   return `Host: ${req.hostname}, Body: ${JSON.stringify(req.body)}`;
